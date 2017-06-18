@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <br>
+   <a href="table.html"><b>Перейти до Таблиці</b></a> 
+   <br><hr><br>
+   <h1>Соціологічне опитування</h1>
+   <p>Дане соціологічне опитування не буде використовуватися в науково-дослідницьких цілях. Також воно не має анонімний характер, 
+   хоча отримані дані будуть використані тільки в узагальненому вигляді, тому ваше ім'я це тільки формальність і всім однаково хто ви є. 
+   Навіть більше скажу вам, дані анкетування не будуть узагальнюватися, ніхто не буде тратити на це свій час, а ці 10хв. ви потратите марно відповідаючи на питання, 
+   тому краще подзвоніть своїм батькам, їм буде приємно.</p>
+   <form action="https://formspree.io/yuriy.panchyshyn01@gmail.com" method="POST">
+       <label>Ім'я: <input type="text" name="client-name" placeholder="Ім'я"></label>
+       <br><br>
+       <label>Email: <input type="email" name="client-email" placeholder="Ваш Email"></label>
+       <br><br>
+       <label>Ваш вік: <input type="number" name="years" min="5" max="100" step="1" value="18"> років</label>
+       <br><br>
+       <label> Стать: <input type="radio" name="gender" value="Чоловік" checked>Чоловік
+                      <input type="radio" name="gender" value="Жінка">Жінка
+                      <input type="radio" name="gender" value="Ще не докінця зрозуміло">Ще не докінця зрозуміло</label>
+       <br><br>
+       <label> Сімейний стан: <br>
+            <input type="radio" name="marital" value="Не одружений/незаміжня" checked>Не одружений/незаміжня<br>
+            <input type="radio" name="marital" value="Одружений/заміжня">Одружений/заміжня<br>
+            <input type="radio" name="marital" value="Цивільний шлюб">Цивільний шлюб<br>
+            <input type="radio" name="marital" value="Є дівчина/хлопець">Є дівчина/хлопець<br>
+            <input type="radio" name="marital" value="Все складно">Все складно<br>
+       <br><br>
+       <label> Освіта: <br>
+            <input type="radio" name="education" value="Неповна середня">Неповна середня<br>
+            <input type="radio" name="education" value="Середня">Середня<br>
+            <input type="radio" name="education" value="Неповна вища" checked>Неповна вища<br>
+            <input type="radio" name="education" value="Вища">Вища<br>
+            <input type="radio" name="education" value="Все складно">Все складно<br>
+       <br><br>
+       <label> Місце проживання: <br>
+            <input type="radio" name="residence" value="Власне житло">Власне житло<br>
+            <input type="radio" name="residence" value="Орендую">Орендую<br>
+            <input type="radio" name="residence" value="в гуртожитку">В гуртожиткуа<br>
+            <input type="radio" name="residence" value="з  батьками" checked>З батьками<br>
+            <input type="radio" name="residence" value="Все складно">Все складно<br>
+       <br><br>
+       <input type="submit">
+       <input type="reset">
+   </form>
+</body>
+</html>
